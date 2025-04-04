@@ -90,5 +90,6 @@ FakeSoundDetector/
 - Training and validation datasets have been removed to reduce project size.
 - Only testing functionality is enabled by default.
 - The trained model (achieved ~71% accuracy) is saved in the backend folder and ready for use.
-- If retraining is required, update the model and scaler files in the backend.
+- If retraining is required, update the model and scaler files in the backend.    
+-Make sure you register first then login then only you can check whether sound is real or fake else it will show Invalid Token
 
