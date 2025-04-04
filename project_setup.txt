@@ -1,0 +1,94 @@
+FakeSoundDetector - Project Setup Guide
+=======================================
+
+📦 Software & Tools Used
+------------------------
+1. Python 3.10+
+2. Node.js 18+
+3. MySQL 8+
+4. React.js (via Create React App)
+5. Git (for version control)
+
+🧠 Python Libraries (Model Training & Inference)
+------------------------------------------------
+- tensorflow==2.15.0
+- librosa==0.10.1
+- numpy==1.24.3
+- scikit-learn==1.3.0
+- joblib==1.3.2
+- soundfile==0.12.1
+
+📦 Node.js Backend (Authentication + Prediction API)
+----------------------------------------------------
+- express
+- mysql2
+- cors
+- dotenv
+- body-parser
+- jsonwebtoken
+- bcryptjs
+
+🎨 Frontend (React)
+-------------------
+- react
+- react-router-dom
+- axios
+- tailwindcss (for styling)
+- react-icons
+- @mui/icons-material (optional for admin panel)
+
+🗂 Folder Structure
+-------------------
+FakeSoundDetector/
+│
+├── backend/               # Node.js server + trained model
+│   ├── fake_sound_detector_model.h5
+│   ├── fake_sound_detector_scaler.pkl
+│   └── index.js           # Main backend entry point
+│
+├── frontend/              # React app with UI for detection
+│
+├── data/
+│   └── testing/           # Audio files (.wav) for model prediction
+│
+├── requirements.txt       # Python dependencies
+├── project_setup.txt      # This file
+└── README.md
+
+🚀 Steps to Run the Project
+---------------------------
+
+1. Clone the Repository:
+   git clone https://github.com/NavneetNaman/FakeSoundDetector.git
+   cd FakeSoundDetector
+
+2. Set up Python Environment:
+   - Ensure Python 3.10+ is installed
+   - (Optional) Create and activate a virtual environment
+   - Install required packages:
+     pip install -r requirements.txt
+
+3. Test the Trained Model:
+   - Place `.wav` files in `data/testing/`
+   - Run the prediction script (provided in backend or a separate notebook/script)
+
+4. Set up Node.js Backend:
+   cd backend
+   npm install
+   - Create a `.env` file and add your MySQL database credentials
+   - Start the backend:
+     node index.js
+
+5. Set up React Frontend:
+   cd ../frontend
+   npm install
+   npm start
+   - React app will run at: http://localhost:3000
+
+✅ Notes
+--------
+- Training and validation datasets have been removed to reduce project size.
+- Only testing functionality is enabled by default.
+- The trained model (achieved ~71% accuracy) is saved in the backend folder and ready for use.
+- If retraining is required, update the model and scaler files in the backend.
+
