@@ -1,0 +1,92 @@
+/* Fix: Center content properly without overlapping */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px); /* Adjusted to prevent footer overlap */
+  padding-top: 100px; /* Push down to avoid navbar overlap */
+  padding-bottom: 50px; /* Ensures content stays above the footer */
+  background-image: url('../assets/img.jpg'); /* Background Image */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Centered Box Styling */
+.auth-container {
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Prevent overlap with footer */
+}
+
+/* Title Styling */
+.auth-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a0072; /* Dark purple */
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a0dad; /* Purple Button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #4a0072;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Links for Register/Login */
+.register-link,
+.login-link {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.register-link a,
+.login-link a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .auth-container {
+    width: 95%;
+    padding: 20px;
+  }
+}

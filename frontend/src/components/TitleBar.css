@@ -1,0 +1,58 @@
+/* Title Bar Styling */
+.title-bar {
+  background: #800080; /* Light purple shade */
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column; /* Stack elements */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Text */
+.title {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space between title and links */
+  text-align: center;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}

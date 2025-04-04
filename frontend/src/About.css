@@ -1,0 +1,24 @@
+/* About.css */
+.about-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9; /* Light background shade */
+    color: #333;
+    min-height: 100vh;
+}
+
+.about-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.about-container p {
+    font-size: 1.3em;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}

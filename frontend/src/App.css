@@ -1,0 +1,93 @@
+/* Fix content overlapping */
+.content {
+  margin-top: 80px; /* Ensure space below title bar */
+  flex-grow: 1; /* Allows content to push footer down */
+  padding-bottom: 60px; /* Prevent overlap with footer */
+}
+
+/* Title Bar Lightened to Purple Shade */
+.title-bar {
+  background: rgba(128, 0, 128, 0.8) !important; /* Light purple shade */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 18px; /* Increased font size */
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white !important; /* Improved visibility */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Center Login and Register Pages */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+  text-align: center;
+}
+
+/* Register Button Alignment Fix */
+.register-btn {
+  margin-left: auto;
+}
+
+/* Background Image Cover Fix */
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Center Upload Section */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Fix Footer Overlapping */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: rgba(128, 0, 128, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
